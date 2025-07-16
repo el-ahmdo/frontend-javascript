@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "rootDir": "./js", // ✅ Corrected root directory
+    "outDir": "./dist/", // ✅ Output directory
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "webpack.config.js", // ✅ Prevents TS from trying to compile this file
+    "dist", // ✅ Avoids output-folder recursion
+    "node_modules" // ✅ Always exclude this
+  ]
+}
